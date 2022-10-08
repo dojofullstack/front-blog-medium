@@ -13,7 +13,7 @@ const ArticleDetail = () => {
 
 
     const getDetailArticle  = async () => {
-      let baseURL = `http://127.0.0.1:8000/api/v1/detail/${id_article}`;
+      let baseURL = `https://y82rz54sna.execute-api.us-east-1.amazonaws.com/dev/api/v1/detail/${id_article}`;
       axios.get(baseURL).then((response) => {
         setdetailarticles(response.data.data);
         });

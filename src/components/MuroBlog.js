@@ -44,10 +44,10 @@ const MuroBlog = ({data}) => {
   </div>
   <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
     {data?.imagen?.includes('/media') && 
-        <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full" src={`http://127.0.0.1:8000${data.imagen}`} alt=""/>
+        <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full" src={`https://y82rz54sna.execute-api.us-east-1.amazonaws.com/dev${data.imagen}`} alt=""/>
     }
      {!data?.imagen?.includes('/media') && 
-        <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full" src={`http://127.0.0.1:8000/media/${data.imagen}`} alt=""/>
+        <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full" src={`https://y82rz54sna.execute-api.us-east-1.amazonaws.com/dev/media/${data.imagen}`} alt=""/>
     }
   </div>
 </div>

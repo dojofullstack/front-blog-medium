@@ -8,7 +8,7 @@ const Article = ({data}) => {
         return (
       <div class="group relative">
         <div class="min-h-50 w-100 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
-          <img src={`http://127.0.0.1:8000/media/${data.imagen}`} alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center w-100"/>
+          <img src={`https://y82rz54sna.execute-api.us-east-1.amazonaws.com/dev/media/${data.imagen}`} alt="Front of men&#039;s Basic Tee in black." class="h-full w-full object-cover object-center w-100"/>
         </div>
 
         <div class="mt-4 flex justify-between">

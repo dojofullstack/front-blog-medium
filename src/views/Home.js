@@ -22,14 +22,14 @@ const Home = () => {
 
 
     const getInfoBlog  = async () => {
-      let baseURL = 'http://127.0.0.1:8000/api/v1/info-blog';
+      let baseURL = 'https://y82rz54sna.execute-api.us-east-1.amazonaws.com/dev/api/v1/info-blog';
       await axios.get(baseURL).then((response) => {
           setinfoBlog(response.data.data);
         });
     }
 
     const getAllArticles  = async () => {
-      let baseURL = 'http://127.0.0.1:8000/api/v1/all';
+      let baseURL = 'https://y82rz54sna.execute-api.us-east-1.amazonaws.com/dev/api/v1/all';
       await axios.get(baseURL).then((response) => {
         setarticles(response.data.data);
         });

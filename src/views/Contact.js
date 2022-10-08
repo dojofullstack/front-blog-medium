@@ -24,7 +24,7 @@ const Contact = () => {
       };
 
     const onSubmit  = async (data) => {
-      let baseURL = `http://127.0.0.1:8000/api/v1/contact/create`;
+      let baseURL = `https://y82rz54sna.execute-api.us-east-1.amazonaws.com/dev/api/v1/contact/create`;
       await axios.post(baseURL, data).then((response) => {
         setinfoContact(response.data);
 
